@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+cMJ4yqRbZcFgPKHzNROa57Uhv8UWeVkllKpXQVXi0l2RfiaEs54H6iUTdCwoK1rSyZzJQJ3RxVHOgD9hj7VRA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\Git\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
