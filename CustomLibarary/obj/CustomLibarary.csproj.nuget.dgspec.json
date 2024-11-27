@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Desktop\\Git\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Desktop\\Git\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Git\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj",
         "projectName": "CustomLibarary",
-        "projectPath": "C:\\Users\\admin\\Desktop\\Git\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Desktop\\Git\\CustomLibarary\\CustomLibarary\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\CustomLibarary\\CustomLibarary\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

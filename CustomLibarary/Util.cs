@@ -389,6 +389,9 @@ namespace Nexu.Utility
         {
             Console.WriteLine(value);
         }
+
+
+
         /// <summary>
         /// 아스키 변환 확장 메서드
         /// </summary>
@@ -405,6 +408,9 @@ namespace Nexu.Utility
 
             return arry;
         }
+
+
+
         /// <summary>
         /// 정수 변환 확장 메서드
         /// </summary>
@@ -414,7 +420,19 @@ namespace Nexu.Utility
         {
             return int.Parse(str);
         }
+        /// <summary>
+        /// 정수 변환 확장 메서드
+        /// </summary>
+        /// <param name="str">목표 문자</param>
+        /// <returns>정수형</returns>
+        static public int toInt(this char chr)
+        {
+            return int.Parse(chr.ToString());
+        }
 
+
+
+        #region 더하기
         /// <summary>
         /// 더하기 확장 매서드
         /// </summary>
@@ -452,6 +470,50 @@ namespace Nexu.Utility
             return tuple.Item1 + tuple.Item2;
         }
 
+
+        /// <summary>
+        /// 더하기 확장 매서드
+        /// </summary>
+        /// <param name="data">베이스 int형</param>
+        /// <param name="value">더하고자 하는 int형</param>
+        /// <returns>int형</returns>
+        static public int add(this int data, int value)
+        {
+            return data + value;
+        }
+        /// <summary>
+        /// 더하기 확장 매서드
+        /// </summary>
+        /// <param name="data">베이스 float형</param>
+        /// <param name="value">더하고자 하는 float형</param>
+        /// <returns>float형</returns>
+        static public float add(this float data, float value)
+        {
+            return data + value;
+        }
+        /// <summary>
+        /// 더하기 확장 매서드
+        /// </summary>
+        /// <param name="data">베이스 double형</param>
+        /// <param name="value">더하고자 하는 double형</param>
+        /// <returns>double형</returns>
+        static public double add(this double data, double value)
+        {
+            return data + value;
+        }
+        /// <summary>
+        /// 더하기 확장 매서드
+        /// </summary>
+        /// <param name="data">베이스 string형</param>
+        /// <param name="value">더하고자 하는 string형</param>
+        /// <returns>string형</returns>
+        static public string add(this string data, string value)
+        {
+            return data + value;
+        }
+        #endregion
+
+        #region 곱하기
         /// <summary>
         /// 곱하기 확장 매서드
         /// </summary>
@@ -461,6 +523,9 @@ namespace Nexu.Utility
         {
             return tuple.Item1 * tuple.Item2;
         }
+
+
+
         /// <summary>
         /// 곱하기 확장 매서드
         /// </summary>
@@ -470,6 +535,9 @@ namespace Nexu.Utility
         {
             return tuple.Item1 * tuple.Item2;
         }
+
+
+
         /// <summary>
         /// 곱하기 확장 매서드
         /// </summary>
@@ -479,6 +547,7 @@ namespace Nexu.Utility
         {
             return tuple.Item1 * tuple.Item2;
         }
+        #endregion
         #endregion
     }
 }
