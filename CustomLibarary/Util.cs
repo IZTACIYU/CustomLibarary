@@ -244,18 +244,6 @@ namespace Nexu.Utility
 
             return json;
         }
-
-
-        /// <summary>
-        /// Json 파일로부터 데이터를 Porting합니다.
-        /// <para>대입 가능 범위 내 데이터 형식변환을 지원합니다.</para>
-        /// <para>대응범위 : 직렬/역직렬화가 가능한 모든 범위</para>
-        /// </summary>
-        /// <typeparam name="T">Generic Type</typeparam>
-        /// <param name="dataType">포팅하고자 하는 데이터 타입 지정</param>
-        /// <param name="filePath">파일 경로</param>
-        /// <param name="fileName">파일명</param>
-        static public void ImportJSON<T>(this T dataType, string filePath, string fileName) => dataType = LoadJSON(dataType, filePath, fileName);
         #endregion
 
 
