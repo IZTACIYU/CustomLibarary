@@ -44,8 +44,9 @@ namespace Nexu.Utility
         /// <typeparam name="T">Generic Type</typeparam>
         /// <param name="dataType">저장하고자 하는 데이터</param>
         /// <param name="filePath">저장 경로</param>
+        /// <param name="fileName">파일명</param>
         /// <returns>Void Value</returns>
-        static public void SaveJSON<T>(this T dataType, string filePath)
+        static public void SaveJSON<T>(this T dataType, string filePath, string fileName)
         {
             if (string.IsNullOrEmpty(filePath))
             {
@@ -57,10 +58,12 @@ namespace Nexu.Utility
                 return; // 파일 경로가 유효하지 않으므로 메서드 종료
             }
 
+            string CPath = Path.Combine(filePath, fileName);
+
             try
             {
                 string json = JsonConvert.SerializeObject(dataType, Formatting.Indented);
-                File.WriteAllText(filePath, json);
+                File.WriteAllText(CPath, json);
 
                 "SUC".print();
             }
