@@ -51,6 +51,8 @@ namespace Nexu.Utility
             return int.Parse(newType[index]);
         }
         #endregion
+
+
         /***********************************************************************
         *                             Json Methods
         ***********************************************************************/
@@ -91,6 +93,8 @@ namespace Nexu.Utility
 #endif
             }
         }
+
+
         /// <summary>
         /// Json 파일에서 데이터를 로드합니다.
         /// <para>대입 가능 범위 내 데이터 형식변환을 지원합니다.</para>
@@ -143,6 +147,8 @@ namespace Nexu.Utility
 #endif
             }
         }
+
+
         /// <summary>
         /// 지정 Json파일의 모든 데이터를 삭제합니다.
         /// </summary>
@@ -152,11 +158,15 @@ namespace Nexu.Utility
             string json = "";
             SaveJSON(json, filePath);
         }
+
+
         /// <summary>
         /// 지정 Json파일을 삭제합니다.
         /// </summary>
         /// <param name="filePath">지정 파일 경로</param>
         static public void DeleteJSON(string filePath) => File.Delete(filePath);
+
+
         /// <summary>
         /// Json 파일에서 데이터를 로드합니다.
         /// <para>대입 가능 범위 내 데이터 형식변환을 지원합니다.</para>
@@ -206,6 +216,8 @@ namespace Nexu.Utility
                 return default(T);
             }
         }
+
+
         /// <summary>
         /// 두 Json을 병합시킵니다.
         /// <para>대입 가능 범위 내 데이터 형식변환을 지원합니다.</para>
@@ -215,7 +227,7 @@ namespace Nexu.Utility
         /// <param name="source">합치고자 하는 데이터</param>
         /// <param name="target">합치고자 하는 데이터</param>
         /// <returns>문자열 형식으로 반환됩니다.</returns>
-        static public string MergeJson<T>(params T[] source)
+        static public string MergeJSON<T>(params T[] source)
         {
             string json = null;
 
@@ -243,7 +255,23 @@ namespace Nexu.Utility
 
             return json;
         }
+
+
+        /// <summary>
+        /// Json 파일로부터 데이터를 Porting합니다.
+        /// <para>대입 가능 범위 내 데이터 형식변환을 지원합니다.</para>
+        /// <para>대응범위 : 직렬/역직렬화가 가능한 모든 범위</para>
+        /// </summary>
+        /// <typeparam name="T">Generic Type</typeparam>
+        /// <param name="dataType">포팅하고자 하는 데이터 타입 지정</param>
+        /// <param name="filePath">파일 경로</param>
+        static public void ImportJSON<T>(this T dataType, string filePath)
+        {
+            dataType = LoadJSON(dataType, filePath);
+        }
         #endregion
+
+
         /***********************************************************************
         *                        Condition Check Methods
         ***********************************************************************/
@@ -271,6 +299,8 @@ namespace Nexu.Utility
                 return null;
         }
         #endregion
+
+
         /***********************************************************************
         *                      Data Struct Modify Methods
         ***********************************************************************/
@@ -376,6 +406,8 @@ namespace Nexu.Utility
             return newType.ToArray();
         }
         #endregion
+
+
         /***********************************************************************
         *                          Extension Methods
         ***********************************************************************/

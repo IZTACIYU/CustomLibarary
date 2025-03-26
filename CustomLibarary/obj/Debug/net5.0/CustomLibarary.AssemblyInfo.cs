@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CustomLibarary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+138bebf538acd051a67161ffd0784f996ed6b71d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dba27cdb78358b0e18cc65cd81473d840eebcdf2")]
 [assembly: System.Reflection.AssemblyProductAttribute("CustomLibarary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CustomLibarary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
