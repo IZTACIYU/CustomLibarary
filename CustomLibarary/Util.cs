@@ -79,14 +79,15 @@ namespace Nexu.Utility
 
 
         /// <summary>
-        /// Json 파일에서 데이터를 로드합니다.
-        /// <para>대입 가능 범위 내 데이터 형식변환을 지원합니다.</para>
+        /// Json 파일에서 데이터를 복사합니다.
+        /// <para>대입 가능 범위 내 데이터 복사를 지원합니다.</para>
         /// <para>대응범위 : 직렬/역직렬화가 가능한 모든 범위</para>
         /// </summary>
         /// <param name="filePath">원본 파일 경로</param>
         /// <param name="copyPath">복사할 파일 경로</param>
+        /// <param name="copyPath">복사할 파일명</param>
         /// <returns></returns>
-        static public void CopyJSON(string filePath, string copyPath)
+        static public void CopyJSON(string filePath, string copyPath, string copyName)
         {
             if (string.IsNullOrEmpty(filePath))
             {
@@ -110,7 +111,7 @@ namespace Nexu.Utility
                 {
                     string json = File.ReadAllText(filePath);
                     var format = JsonConvert.DeserializeObject(json);
-                    Util.SaveJSON(format, copyPath);
+                    Util.SaveJSON(format, copyPath, copyName);
                 }
                 catch (Exception ex)
                 {
@@ -136,10 +137,11 @@ namespace Nexu.Utility
         /// 지정 Json파일의 모든 데이터를 삭제합니다.
         /// </summary>
         /// <param name="filePath">지정 파일 경로</param>
-        static public void RemoveJSON(string filePath)
+        /// <param name="fileName">지정 파일명</param>
+        static public void RemoveJSON(string filePath, string fileName)
         {
             string json = "";
-            SaveJSON(json, filePath);
+            SaveJSON(json, filePath, fileName);
         }
 
 
