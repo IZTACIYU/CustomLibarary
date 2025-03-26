@@ -34,26 +34,6 @@ namespace Nexu.Utility
 
 
         /***********************************************************************
-        *                             Unity Method
-        ***********************************************************************/
-        #region .
-        /// <summary>
-        /// 이름을 통한 인덱스 파싱
-        /// <para>획일화된 이름 유형이 요구됨</para>
-        /// </summary>
-        /// <param name="name">인덱스를 구하고자 하는 객체의 이름</param>
-        /// <param name="mark">객체 이름을 나눌 기호</param>
-        /// <param name="index">몇번째 절을 받아올지 지정</param>
-        /// <returns></returns>
-        static public int IndexParsing(string name, char mark, int index)
-        {
-            var newType = name.Split(mark);
-            return int.Parse(newType[index]);
-        }
-        #endregion
-
-
-        /***********************************************************************
         *                             Json Methods
         ***********************************************************************/
         #region .
@@ -265,9 +245,26 @@ namespace Nexu.Utility
         /// <typeparam name="T">Generic Type</typeparam>
         /// <param name="dataType">포팅하고자 하는 데이터 타입 지정</param>
         /// <param name="filePath">파일 경로</param>
-        static public void ImportJSON<T>(this T dataType, string filePath)
+        static public void ImportJSON<T>(this T dataType, string filePath) => dataType = LoadJSON(dataType, filePath);
+        #endregion
+
+
+        /***********************************************************************
+        *                             Unity Method
+        ***********************************************************************/
+        #region .
+        /// <summary>
+        /// 이름을 통한 인덱스 파싱
+        /// <para>획일화된 이름 유형이 요구됨</para>
+        /// </summary>
+        /// <param name="name">인덱스를 구하고자 하는 객체의 이름</param>
+        /// <param name="mark">객체 이름을 나눌 기호</param>
+        /// <param name="index">몇번째 절을 받아올지 지정</param>
+        /// <returns></returns>
+        static public int IndexParsing(string name, char mark, int index)
         {
-            dataType = LoadJSON(dataType, filePath);
+            var newType = name.Split(mark);
+            return int.Parse(newType[index]);
         }
         #endregion
 
@@ -452,6 +449,7 @@ namespace Nexu.Utility
         {
             return int.Parse(str);
         }
+
         /// <summary>
         /// 정수 변환 확장 메서드
         /// </summary>
