@@ -58,7 +58,7 @@ namespace Nexu.Utility
                 return; // 파일 경로가 유효하지 않으므로 메서드 종료
             }
 
-            string CPath = Path.Combine(filePath, fileName);
+            string CPath = Path.Combine(filePath, fileName) + ".json";
 
             try
             {
@@ -149,7 +149,8 @@ namespace Nexu.Utility
         /// 지정 Json파일을 삭제합니다.
         /// </summary>
         /// <param name="filePath">지정 파일 경로</param>
-        static public void DeleteJSON(string filePath) => File.Delete(filePath);
+        /// <param name="fileName">지정 파일명</param>
+        static public void DeleteJSON(string filePath, string fileName) => File.Delete(filePath);
 
 
         /// <summary>
@@ -160,10 +161,13 @@ namespace Nexu.Utility
         /// <typeparam name="T">Generic Type</typeparam>
         /// <param name="dataType">로드하고자 하는 데이터 타입 지정</param>
         /// <param name="filePath">파일 경로</param>
+        /// <param name="fileName">파일명</param>
         /// <returns>데이터 객체</returns>
-        static public T LoadJSON<T>(T dataType, string filePath)
+        static public T LoadJSON<T>(T dataType, string filePath, string fileName)
         {
-            if (string.IsNullOrEmpty(filePath))
+            string CPath = Path.Combine(filePath, fileName) + ".json";
+
+            if (string.IsNullOrEmpty(CPath))
             {
 #if UNITY
                 UnityEngine.Debug.LogError("Error: File path is null or empty.");
@@ -173,11 +177,11 @@ namespace Nexu.Utility
                 return default(T); // 파일 경로가 유효하지 않으므로 기본값 반환
             }
 
-            if (File.Exists(filePath))
+            if (File.Exists(CPath))
             {
                 try
                 {
-                    string json = File.ReadAllText(filePath);
+                    string json = File.ReadAllText(CPath);
                     var format = JsonConvert.DeserializeObject<T>(json);
                     return format;
                 }
@@ -250,7 +254,8 @@ namespace Nexu.Utility
         /// <typeparam name="T">Generic Type</typeparam>
         /// <param name="dataType">포팅하고자 하는 데이터 타입 지정</param>
         /// <param name="filePath">파일 경로</param>
-        static public void ImportJSON<T>(this T dataType, string filePath) => dataType = LoadJSON(dataType, filePath);
+        /// <param name="fileName">파일명</param>
+        static public void ImportJSON<T>(this T dataType, string filePath, string fileName) => dataType = LoadJSON(dataType, filePath, fileName);
         #endregion
 
 
