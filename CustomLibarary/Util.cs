@@ -163,7 +163,7 @@ namespace Nexu.Utility
         /// <param name="filePath">파일 경로</param>
         /// <param name="fileName">파일명</param>
         /// <returns>데이터 객체</returns>
-        static public T LoadJSON<T>(T dataType, string filePath, string fileName)
+        static public T LoadJSON<T>(string filePath, string fileName)
         {
             string CPath = Path.Combine(filePath, fileName) + ".json";
 

@@ -38,7 +38,7 @@ namespace CustomLibrary
         
         static void Main(string[] args)
         {
-            dictionary.SaveJSON(filePath);
+            dictionary.SaveJSON(filePath, "Test");
             "123".toAscii()[1].print();
 
             (1, 5).multiple().print();
