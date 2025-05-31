@@ -576,6 +576,18 @@ namespace Nexu.Utility
             return tuple.Item1 * tuple.Item2;
         }
         #endregion
+
+        #region 범위
+        static public int max(this int value, int max) => value > max ? max : value;
+        static public int min(this int value, int min) => value < min ? min : value;
+
+        static public float max(this float value, float max) => value > max ? max : value;
+        static public float min(this float value, float min) => value < min ? min : value;
+
+        static public int range(this int value, int min, int max) => value.min(min).max(max);
+        static public float range(this float value, float min, float max) => value.min(min).max(max);
+        #endregion
+        
         #endregion
     }
 }

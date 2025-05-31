@@ -38,12 +38,7 @@ namespace CustomLibrary
         
         static void Main(string[] args)
         {
-            dictionary.SaveJSON(filePath, "Test");
-            "123".toAscii()[1].print();
-
-            (1, 5).multiple().print();
-            (1.0, 5.4).multiple().print();
-            ("Hello ", "World").add().print();
+            1111.range(0, 22).print();
         }
     }
 }
