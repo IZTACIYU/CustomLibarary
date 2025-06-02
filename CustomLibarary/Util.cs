@@ -587,7 +587,56 @@ namespace Nexu.Utility
         static public int range(this int value, int min, int max) => value.min(min).max(max);
         static public float range(this float value, float min, float max) => value.min(min).max(max);
         #endregion
-        
+
+        #endregion
+
+
+        /***********************************************************************
+        *                               Immitating
+        ***********************************************************************/
+        #region .
+        public class Component
+        {
+            public Component()
+            {
+                _components = new Dictionary<Type, Component>();
+            }
+
+            private Dictionary<Type, Component> _components;
+            public void AddComponent<T>(T component) where T : Component
+            {
+                _components[typeof(T)] = component;
+            }
+            public T GetComponent<T>() where T : Component
+            {
+                if (_components.TryGetValue(typeof(T), out Component comp))
+                {
+                    return comp as T;
+                }
+                return null;
+            }
+            public bool TryGetComponent<T>(out T component) where T : Component
+            {
+                if (_components.TryGetValue(typeof(T), out Component comp))
+                {
+                    component = comp as T;
+                    return true;
+                }
+                component = null;
+                return false;
+            }
+            public bool CheckComponent<T>() where T : Component
+            {
+                if (_components.TryGetValue(typeof(T), out Component comp))
+                    return true;
+                return false;
+            }
+        }
+
+        public class Mono : Component
+        {
+            public Mono() { }
+        }
         #endregion
     }
 }

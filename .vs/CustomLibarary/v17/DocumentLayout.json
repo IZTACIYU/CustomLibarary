@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{45FC28B0-59F8-4F59-BC4A-40E4116669C6}|CustomLibarary\\CustomLibarary.csproj|solutionrelative:customlibarary\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{45FC28B0-59F8-4F59-BC4A-40E4116669C6}|CustomLibarary\\CustomLibarary.csproj|c:\\syj2021391010\\customlibarary\\customlibarary\\test.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{45FC28B0-59F8-4F59-BC4A-40E4116669C6}|CustomLibarary\\CustomLibarary.csproj|solutionrelative:customlibarary\\test.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{45FC28B0-59F8-4F59-BC4A-40E4116669C6}|CustomLibarary\\CustomLibarary.csproj|c:\\syj2021391010\\customlibarary\\customlibarary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45FC28B0-59F8-4F59-BC4A-40E4116669C6}|CustomLibarary\\CustomLibarary.csproj|solutionrelative:customlibarary\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,8 +22,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "test.json",
+              "DocumentMoniker": "C:\\syj2021391010\\CustomLibarary\\CustomLibarary\\test.json",
+              "RelativeDocumentMoniker": "CustomLibarary\\test.json",
+              "ToolTip": "C:\\syj2021391010\\CustomLibarary\\CustomLibarary\\test.json",
+              "RelativeToolTip": "CustomLibarary\\test.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-02T00:09:42.118Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,14 +44,14 @@
               "RelativeDocumentMoniker": "CustomLibarary\\Util.cs",
               "ToolTip": "C:\\syj2021391010\\CustomLibarary\\CustomLibarary\\Util.cs",
               "RelativeToolTip": "CustomLibarary\\Util.cs",
-              "ViewState": "AQIAAM4BAAAAAAAAAAAswEsCAAAtAAAA",
+              "ViewState": "AQIAAA8BAAAAAAAAAAAiwIECAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T02:11:15.339Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\syj2021391010\\CustomLibarary\\CustomLibarary\\Program.cs",
               "RelativeDocumentMoniker": "CustomLibarary\\Program.cs",
@@ -43,8 +59,7 @@
               "RelativeToolTip": "CustomLibarary\\Program.cs",
               "ViewState": "AQIAABYAAAAAAAAAAADwvygAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T12:01:03.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T12:01:03.578Z"
             }
           ]
         }
