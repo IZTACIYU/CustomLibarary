@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CustomLibarary
-build_property.ProjectDir = C:\syj2021391010\CustomLibarary\CustomLibarary\
+build_property.ProjectDir = C:\Users\Administrator\Desktop\호준\CustomLibarary\CustomLibarary\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

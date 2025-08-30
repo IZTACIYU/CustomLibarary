@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\syj2021391010\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\호준\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj": {}
   },
   "projects": {
-    "C:\\syj2021391010\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\호준\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\syj2021391010\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\호준\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj",
         "projectName": "CustomLibarary",
-        "projectPath": "C:\\syj2021391010\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\호준\\CustomLibarary\\CustomLibarary\\CustomLibarary.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\syj2021391010\\CustomLibarary\\CustomLibarary\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\호준\\CustomLibarary\\CustomLibarary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
